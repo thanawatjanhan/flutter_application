@@ -9,20 +9,22 @@ class InputDemo extends StatefulWidget {
 
 class _InputDemoState extends State<InputDemo> {
   String message = "";
+  TextEditingController tcName = TextEditingController();
 
-  void updateMessage(String str) {
+  void updateMessage() {
     setState(() {
-      message = str;
+      message = tcName.text;
     });
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Input Demo')),
+      appBar: AppBar(title: Text("Input Demo")),
       body: Column(
         children: [
-          TextField(onChanged: (String str) => updateMessage(str)),
+          TextField(controller: tcName),
+          ElevatedButton(onPressed: updateMessage, child: Text("Okay")),
           Text(message),
         ],
       ),
