@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-// import 'package:flutter_application_1/week01/basic.dart';
-import 'package:flutter_application_1/week01/counter.dart';
+import 'fishing.dart';
 
 void main() {
-  runApp(MaterialApp(home: 
-    Counter()
-  )); //MaterialApp
+  runApp(MaterialApp(debugShowCheckedModeBanner: false, home: Fishing()));
 }
