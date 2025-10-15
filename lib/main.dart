@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 // import 'package:flutter_application_1/week07/assignment1.dart';
-import 'package:flutter_application_1/week07/assignment2.dart';
+// import 'package:flutter_application_1/week07/assignment2.dart';
+import 'package:flutter_application_1/week07/assignment3.dart';
 // import 'package:flutter_application_1/week07/datepicker_demo.dart';
 // import 'package:flutter_application_1/week07/dropdown_demo.dart';
 // import 'package:flutter_application_1/week07/radio_demo.dart';
@@ -11,6 +12,6 @@ import 'package:flutter_application_1/week07/assignment2.dart';
 
 void main() {
   runApp(
-    MaterialApp(home: Assignment2(), debugShowCheckedModeBanner: false),
+    MaterialApp(home: Assignment3(), debugShowCheckedModeBanner: false),
   ); //MaterialApp
 }
