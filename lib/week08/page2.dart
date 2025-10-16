@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/week08/page1.dart';
 
 import 'fruit.dart';
 
@@ -26,10 +27,23 @@ class Page2 extends StatelessWidget {
           Text("Expire: ${fruit.date[1]}"),
           FilledButton(
             onPressed: () {
+              // clear session and remove local storage
+
               // return to previous page
               Navigator.pop(context);
             },
             child: const Text('Back'),
+          ),
+          FilledButton(
+            onPressed: () {
+              // return to previous page
+              Navigator.pushAndRemoveUntil(
+                context,
+                MaterialPageRoute(builder: (context) => Page1()),
+                (route) => false,
+              );
+            },
+            child: const Text('Logout'),
           ),
         ],
       ),
